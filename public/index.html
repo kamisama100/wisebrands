@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wise Brands</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="text-primary font-inter bg-gray">
+    <nav class="nav">
+      <ul
+        class="hidden lg:flex flex-row items-center justify-between gap-24 h-20 pl-[166px] pr-[87px]"
+      >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+          <a href="index.html"><img src="images/icons/logo.svg" alt="wisenav-logo" /></a>
+        </li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li>
+          <a
+            href="domains.html"
+            class="w-[200px] h-[48px] rounded-full bg-secondary flex items-center justify-center font-inter"
+            >Shop Domains</a
+          >
+        </li>
+      </ul>
+      <ul class="flex flex-row justify-between items-center h-16 px-8 lg:hidden">
+        <a href="index.html"
+          ><img class="w-12 h-12" src="images/icons/logo.svg" alt="wisenav-logo"
+        /></a>
+        <img
+          id="open-menu"
+          class="block lg:hidden cursor-pointer w-8 h-8"
+          src="images/icons/menu.svg"
+          alt="menu"
+        />
+      </ul>
+    </nav>
+
+    <main class="flex flex-col gap-10 lg:gap-[120px] max-w-[1440px] mx-auto overflow-hidden">
+      <section class="mt-12 lg:mt-[120px] px-6 lg:px-0 lg:px-20 pl-6 xl:pl-[148px] w-full">
+        <div class="flex flex-col xl:flex-row w-full">
+          <div class="relative z-20 flex flex-col gap-4 w-full xl:w-[45%]">
+            <h1
+              class="font-extrabold text-[32px] lg:text-[56px] leading-10 lg:leading-[64px] text-center xl:text-left"
+            >
+              The curated marketplace for brandable domain names.
+            </h1>
+            <small class="text-center xl:text-left font-medium text-base leading-6"
+              >Start your naming search with us. We have exclusive domain name inventory that no one
+              else has.</small
+            >
+            <a
+              class="flex items-center justify-center mt-2 w-[200px] h-[48px] rounded-full font-semibold bg-secondary mx-auto xl:mx-0"
+              href="domains.html"
+              >Shop Domains</a
+            >
+          </div>
+
+          <div
+            id="domains"
+            class="z-0 relative mt-10 lg:mt-16 xl:mt-0 flex justify-center flex-row max-w-[278px] md:max-w-[500px] min-h-[390px] mx-auto w-full xl:max-w-[55%]"
+          >
+            <div
+              class="text-white overlay relative z-10 rounded-[10px] overflow-hidden w-[278px] md:min-w-[328px] md:w-[500px] min-h-[390px] lg:h-[390px]"
+            >
+              <img
+                class="w-full min-w-[278px] min-h-[390px] h-full"
+                src="images/sample-domain.jpg"
+                alt="sample domain"
+              />
+              <div
+                class="absolute flex flex-col md:flex-row items-start md:items-end justify-between gap-4 bottom-0 px-6 lg:px-8 pb-4 lg:pb-7 w-full"
+              >
+                <div class="flex flex-col gap-2 text-left">
+                  <span class="font-bold text-xl leading-5 xl:text-2xl xl:leading-6"
+                    >sampledomain.com</span
+                  >
+                  <small class="text-sm xl:text-base text-pink leading-5 xl:leading-4 font-medium"
+                    >transparent-value</small
+                  >
+                </div>
+                <div
+                  class="flex flex-row gap-4 items-center text-base leading-4 font-bold mx-auto md:mx-0"
+                >
+                  <a href="" class="underline underline-offset-4">More</a>
+                  <button class="border-[1px] border-white py-2 px-3.5 rounded-[30px]">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 md:px-[152px] xl:px-[226px]">
+        <div class="flex flex-col items-center gap-14">
+          <span class="font-bold text-[48px] leading-[64px]">Our Values</span>
+          <div
+            class="flex flex-row flex-wrap justify-center lg:gap-x-9 xl:gap-x-12 gap-y-4 lg:gap-y-9 font-roboto"
+          >
+            <div
+              class="w-full lg:w-[240px] h-[120px] lg:h-[272px] p-6 lg:px-0 lg:py-16 border-[3px] lg:border-[5px] border-yellow rounded-[10px]"
+            >
+              <div class="flex flex-col items-center gap-2 lg:gap-4">
+                <img
+                  class="hidden lg:block w-10 h-10"
+                  src="images/icons/dollar-circle.svg"
+                  alt="dollar circle"
+                />
+                <span class="w-full text-left sm:text-center text-2xl leading-6 font-bold"
+                  >Affordable</span
+                >
+                <small class="text-base leading-5 text-left sm:text-center w-full"
+                  >Best prices in the industry. Unbelieve value.</small
+                >
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-[240px] h-[120px] lg:h-[272px] p-6 lg:px-0 lg:py-16 border-[3px] lg:border-[5px] border-yellow rounded-[10px]"
+            >
+              <div class="flex flex-col items-center gap-2 lg:gap-4">
+                <img
+                  class="hidden lg:block w-10 h-10"
+                  src="images/icons/check-circle.svg"
+                  alt="check circle"
+                />
+                <span class="w-full text-left sm:text-center text-2xl leading-6 font-bold"
+                  >Available</span
+                >
+                <small class="text-base leading-5 text-left sm:text-center w-full"
+                  >Exclusive domain names you can get now.</small
+                >
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-[240px] h-[120px] lg:h-[272px] p-6 lg:px-0 lg:py-16 border-[3px] lg:border-[5px] border-yellow rounded-[10px]"
+            >
+              <div class="flex flex-col items-center gap-2 lg:gap-4">
+                <img
+                  class="hidden lg:block w-10 h-10"
+                  src="images/icons/pliers-circle.svg"
+                  alt="plier circle"
+                />
+                <span class="w-full text-left sm:text-center text-2xl leading-6 font-bold"
+                  >Brandable</span
+                >
+                <small class="text-base leading-5 text-left sm:text-center w-full"
+                  >Thoughtful names that customers will remember.</small
+                >
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-[240px] h-[120px] lg:h-[272px] p-6 lg:px-0 lg:py-16 border-[3px] lg:border-[5px] border-yellow rounded-[10px]"
+            >
+              <div class="flex flex-col items-center gap-2 lg:gap-4">
+                <img
+                  class="hidden lg:block w-10 h-10"
+                  src="images/icons/clock-circle.svg"
+                  alt="clock circle"
+                />
+                <span class="w-full text-left sm:text-center text-2xl leading-6 font-bold"
+                  >Fast</span
+                >
+                <small class="text-base leading-5 text-left sm:text-center w-full"
+                  >Take domain ownership in 72 hours or less.</small
+                >
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-[240px] h-[120px] lg:h-[272px] p-6 lg:px-0 lg:py-16 border-[3px] lg:border-[5px] border-yellow rounded-[10px]"
+            >
+              <div class="flex flex-col items-center gap-2 lg:gap-4">
+                <img
+                  class="hidden lg:block w-10 h-10"
+                  src="images/icons/medal-circle.svg"
+                  alt="plier circle"
+                />
+                <span class="w-full text-left sm:text-center text-2xl leading-6 font-bold"
+                  >Quality</span
+                >
+                <small class="text-base leading-5 text-left sm:text-center w-full"
+                  >Hand-selected domains by business and linguistic experts</small
+                >
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-[240px] h-[120px] lg:h-[272px] p-6 lg:px-0 lg:py-16 border-[3px] lg:border-[5px] border-yellow rounded-[10px]"
+            >
+              <div class="flex flex-col items-center gap-2 lg:gap-4">
+                <img
+                  class="hidden lg:block w-10 h-10"
+                  src="images/icons/eye.svg"
+                  alt="plier circle"
+                />
+                <span class="w-full text-left sm:text-center text-2xl leading-6 font-bold"
+                  >Transparent</span
+                >
+                <small class="text-base leading-5 text-left sm:text-center w-full"
+                  >Zero negotiation. Transparent “buy now” pricing.</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 md:px-[152px] xl:px-[222px]">
+        <div class="relative flex flex-col items-center gap-4 lg:gap-12">
+          <span class="font-bold text-[48px] leading-[64px]">Testimonials</span>
+          <div
+            class="pointer-events-none hidden lg:block z-0 opacity-60 font-dhyana text-secondary absolute top-0 left-0 h-fit leading-[500px] text-[500px] font-normal"
+          >
+            “
+          </div>
+
+          <div id="testimonials" class="w-[90%] z-20">
+            <div class="flex flex-col items-end gap-2 lg:px-24 xl:px-28">
+              <p>
+                "As a serial entrepreneur, I've purchased many domain names over the years. But I've
+                never had a better experience than with Wise Brands. Their prices are unbeatable,
+                and the selection of hand-selected domain names is second to none. I was able to
+                find a domain name that perfectly represents my brand and speaks to my target
+                audience. I highly recommend Wise Brands to anyone looking for a great domain name."
+              </p>
+              <span class="text-2xl leading-10">— John D.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 md:px-[152px] xl:px-[182px] mt-10">
+        <div class="flex flex-col items-center gap-4 lg:gap-14">
+          <span class="font-bold text-[48px] leading-[64px]">Our Partners</span>
+          <div class="hidden lg:flex flex-row flex-wrap justify-center gap-14">
+            <div
+              class="partner flex flex-col justify-between px-6 py-6 pb-10 w-[280px] h-[304px] bg-secondary rounded-[20px]"
+            >
+              <br />
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-row justify-between items-center h-10">
+                  <span class="font-semibold text-2xl leading-6">BGDY Creative</span>
+                  <a target="_blank" class="black-arrow" href="https://bgdy.com/"
+                    ><img
+                      class="w-8 h-8"
+                      src="images/icons/black-outline-arrow-right.svg"
+                      alt="black arrow"
+                  /></a>
+                  <a target="_blank" class="white-arrow" href="https://bgdy.com/"
+                    ><img
+                      class="w-8 h-8"
+                      src="images/icons/white-outline-arrow-right.svg"
+                      alt="white arrow"
+                  /></a>
+                </div>
+                <div class="bg-primary w-full h-[1px]"></div>
+                <small class="text-xs leading-4"
+                  >Podcast PR for startups to amplify their message.</small
+                >
+              </div>
+            </div>
+            <div
+              class="partner flex flex-col justify-between px-6 py-6 pb-10 w-[280px] h-[304px] bg-secondary rounded-[20px]"
+            >
+              <br />
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-row justify-between items-center h-10">
+                  <span class="font-semibold text-2xl leading-6">Five Deer</span>
+                  <a target="_blank" class="black-arrow" href="https://bgdy.com/"
+                    ><img
+                      class="w-8 h-8"
+                      src="images/icons/black-outline-arrow-right.svg"
+                      alt="black arrow"
+                  /></a>
+                  <a target="_blank" class="white-arrow" href="https://bgdy.com/"
+                    ><img
+                      class="w-8 h-8"
+                      src="images/icons/white-outline-arrow-right.svg"
+                      alt="white arrow"
+                  /></a>
+                </div>
+                <div class="bg-primary w-full h-[1px]"></div>
+                <small class="text-xs leading-4">Create a unique and memorable brand image.</small>
+              </div>
+            </div>
+            <div
+              class="partner flex flex-col justify-between px-6 py-6 pb-10 w-[280px] h-[304px] bg-secondary rounded-[20px]"
+            >
+              <br />
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-row justify-between items-center h-10">
+                  <span class="font-semibold text-2xl leading-6">Google Workspace</span>
+                  <a target="_blank" class="black-arrow" href="https://bgdy.com/"
+                    ><img
+                      class="w-8 h-8"
+                      src="images/icons/black-outline-arrow-right.svg"
+                      alt="black arrow"
+                  /></a>
+                  <a target="_blank" class="white-arrow" href="https://bgdy.com/"
+                    ><img
+                      class="w-8 h-8"
+                      src="images/icons/white-outline-arrow-right.svg"
+                      alt="white arrow"
+                  /></a>
+                </div>
+                <div class="bg-primary w-full h-[1px]"></div>
+                <small class="text-xs leading-4">Create a unique and memorable brand image.</small>
+              </div>
+            </div>
+            <div
+              class="partner flex flex-col justify-between px-6 py-6 pb-10 w-[280px] h-[304px] bg-secondary rounded-[20px]"
+            >
+              <br />
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-row justify-between items-center h-10">
+                  <span class="font-semibold text-2xl leading-6">Haloo</span>
+                  <a target="_blank" class="black-arrow" href="https://bgdy.com/"
+                    ><img
+                      class="w-8 h-8"
+                      src="images/icons/black-outline-arrow-right.svg"
+                      alt="black arrow"
+                  /></a>
+                  <a target="_blank" class="white-arrow" href="https://bgdy.com/"
+                    ><img
+                      class="w-8 h-8"
+                      src="images/icons/white-outline-arrow-right.svg"
+                      alt="white arrow"
+                  /></a>
+                </div>
+                <div class="bg-primary w-full h-[1px]"></div>
+                <small class="text-xs leading-4">The trademark search company for startups.</small>
+              </div>
+            </div>
+            <div
+              class="partner flex flex-col justify-between px-6 py-6 pb-10 w-[280px] h-[304px] bg-secondary rounded-[20px]"
+            >
+              <br />
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-row justify-between items-center h-10">
+                  <span class="font-semibold text-2xl leading-6">Microsoft 365</span>
+                  <a target="_blank" class="black-arrow" href="https://bgdy.com/"
+                    ><img
+                      class="w-8 h-8"
+                      src="images/icons/black-outline-arrow-right.svg"
+                      alt="black arrow"
+                  /></a>
+                  <a target="_blank" class="white-arrow" href="https://bgdy.com/"
+                    ><img
+                      class="w-8 h-8"
+                      src="images/icons/white-outline-arrow-right.svg"
+                      alt="white arrow"
+                  /></a>
+                </div>
+                <div class="bg-primary w-full h-[1px]"></div>
+                <small class="text-xs leading-4">Essential software to run their businesses.</small>
+              </div>
+            </div>
+            <div
+              class="partner flex flex-col justify-between px-6 py-6 pb-10 w-[280px] h-[304px] bg-secondary rounded-[20px]"
+            >
+              <br />
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-row justify-between items-center h-10">
+                  <span class="font-semibold text-2xl leading-6">Spaceships</span>
+                  <a target="_blank" class="black-arrow" href="https://bgdy.com/"
+                    ><img
+                      class="w-8 h-8"
+                      src="images/icons/black-outline-arrow-right.svg"
+                      alt="black arrow"
+                  /></a>
+                  <a target="_blank" class="white-arrow" href="https://bgdy.com/"
+                    ><img
+                      class="w-8 h-8"
+                      src="images/icons/white-outline-arrow-right.svg"
+                      alt="white arrow"
+                  /></a>
+                </div>
+                <div class="bg-primary w-full h-[1px]"></div>
+                <small class="text-xs leading-4">Web design and development for startups.</small>
+              </div>
+            </div>
+          </div>
+
+          <div id="partners" class="splide max-w-[328px] h-[352px] lg:hidden">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="splide__slide">
+                  <div
+                    class="partner mx-auto flex flex-col justify-between px-6 py-6 pb-10 w-[280px] h-[304px] bg-secondary rounded-[20px]"
+                  >
+                    <br />
+                    <div class="flex flex-col gap-4">
+                      <div class="flex flex-row justify-between items-center h-10">
+                        <span class="font-semibold text-2xl leading-6">BGDY Creative</span>
+                        <a target="_blank" class="black-arrow" href="https://bgdy.com/"
+                          ><img
+                            class="w-8 h-8"
+                            src="images/icons/black-outline-arrow-right.svg"
+                            alt="black arrow"
+                        /></a>
+                        <a target="_blank" class="white-arrow" href="https://bgdy.com/"
+                          ><img
+                            class="w-8 h-8"
+                            src="images/icons/white-outline-arrow-right.svg"
+                            alt="white arrow"
+                        /></a>
+                      </div>
+                      <div class="bg-primary w-full h-[1px]"></div>
+                      <small class="text-xs leading-4"
+                        >Podcast PR for startups to amplify their message.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div
+                    class="partner mx-auto flex flex-col justify-between px-6 py-6 pb-10 w-[280px] h-[304px] bg-secondary rounded-[20px]"
+                  >
+                    <br />
+                    <div class="flex flex-col gap-4">
+                      <div class="flex flex-row justify-between items-center h-10">
+                        <span class="font-semibold text-2xl leading-6">Five Deer</span>
+                        <a target="_blank" class="black-arrow" href="https://bgdy.com/"
+                          ><img
+                            class="w-8 h-8"
+                            src="images/icons/black-outline-arrow-right.svg"
+                            alt="black arrow"
+                        /></a>
+                        <a target="_blank" class="white-arrow" href="https://bgdy.com/"
+                          ><img
+                            class="w-8 h-8"
+                            src="images/icons/white-outline-arrow-right.svg"
+                            alt="white arrow"
+                        /></a>
+                      </div>
+                      <div class="bg-primary w-full h-[1px]"></div>
+                      <small class="text-xs leading-4"
+                        >Create a unique and memorable brand image.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div
+                    class="partner mx-auto flex flex-col justify-between px-6 py-6 pb-10 w-[280px] h-[304px] bg-secondary rounded-[20px]"
+                  >
+                    <br />
+                    <div class="flex flex-col gap-4">
+                      <div class="flex flex-row justify-between items-center h-10">
+                        <span class="font-semibold text-2xl leading-6">Google Workspace</span>
+                        <a target="_blank" class="black-arrow" href="https://bgdy.com/"
+                          ><img
+                            class="w-8 h-8"
+                            src="images/icons/black-outline-arrow-right.svg"
+                            alt="black arrow"
+                        /></a>
+                        <a target="_blank" class="white-arrow" href="https://bgdy.com/"
+                          ><img
+                            class="w-8 h-8"
+                            src="images/icons/white-outline-arrow-right.svg"
+                            alt="white arrow"
+                        /></a>
+                      </div>
+                      <div class="bg-primary w-full h-[1px]"></div>
+                      <small class="text-xs leading-4"
+                        >An integrated suite of productivity tools.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div
+                    class="partner mx-auto flex flex-col justify-between px-6 py-6 pb-10 w-[280px] h-[304px] bg-secondary rounded-[20px]"
+                  >
+                    <br />
+                    <div class="flex flex-col gap-4">
+                      <div class="flex flex-row justify-between items-center h-10">
+                        <span class="font-semibold text-2xl leading-6">Haloo</span>
+                        <a target="_blank" class="black-arrow" href="https://bgdy.com/"
+                          ><img
+                            class="w-8 h-8"
+                            src="images/icons/black-outline-arrow-right.svg"
+                            alt="black arrow"
+                        /></a>
+                        <a target="_blank" class="white-arrow" href="https://bgdy.com/"
+                          ><img
+                            class="w-8 h-8"
+                            src="images/icons/white-outline-arrow-right.svg"
+                            alt="white arrow"
+                        /></a>
+                      </div>
+                      <div class="bg-primary w-full h-[1px]"></div>
+                      <small class="text-xs leading-4"
+                        >The trademark search company for startups.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div
+                    class="partner mx-auto flex flex-col justify-between px-6 py-6 pb-10 w-[280px] h-[304px] bg-secondary rounded-[20px]"
+                  >
+                    <br />
+                    <div class="flex flex-col gap-4">
+                      <div class="flex flex-row justify-between items-center h-10">
+                        <span class="font-semibold text-2xl leading-6">Microsoft 365</span>
+                        <a target="_blank" class="black-arrow" href="https://bgdy.com/"
+                          ><img
+                            class="w-8 h-8"
+                            src="images/icons/black-outline-arrow-right.svg"
+                            alt="black arrow"
+                        /></a>
+                        <a target="_blank" class="white-arrow" href="https://bgdy.com/"
+                          ><img
+                            class="w-8 h-8"
+                            src="images/icons/white-outline-arrow-right.svg"
+                            alt="white arrow"
+                        /></a>
+                      </div>
+                      <div class="bg-primary w-full h-[1px]"></div>
+                      <small class="text-xs leading-4"
+                        >Essential software to run their businesses.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                  <div
+                    class="partner mx-auto flex flex-col justify-between px-6 py-6 pb-10 w-[280px] h-[304px] bg-secondary rounded-[20px]"
+                  >
+                    <br />
+                    <div class="flex flex-col gap-4">
+                      <div class="flex flex-row justify-between items-center h-10">
+                        <span class="font-semibold text-2xl leading-6">Spaceships</span>
+                        <a target="_blank" class="black-arrow" href="https://bgdy.com/"
+                          ><img
+                            class="w-8 h-8"
+                            src="images/icons/black-outline-arrow-right.svg"
+                            alt="black arrow"
+                        /></a>
+                        <a target="_blank" class="white-arrow" href="https://bgdy.com/"
+                          ><img
+                            class="w-8 h-8"
+                            src="images/icons/white-outline-arrow-right.svg"
+                            alt="white arrow"
+                        /></a>
+                      </div>
+                      <div class="bg-primary w-full h-[1px]"></div>
+                      <small class="text-xs leading-4"
+                        >Web design and development for startups.</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer mt-20 lg:mt-[120px] overflow-hidden">
+      <div
+        class="max-w-[1440px] mx-auto pb-[76px] pt-12 lg:py-16 px-6 md:px-10 xl:px-20 flex flex-col gap-16 items-center"
+      >
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-[120px] items-start">
+          <div class="flex flex-col w-full gap-6 lg:gap-4 items-center">
+            <img
+              class="min-w-[184px] w-auto max-w-[288px] min-h-10 h-auto"
+              src="images/icons/logo-with-text.svg"
+              alt="logo with text"
+            />
+            <p class="text-base leading-6 text-center">
+              The curated marketplace for brandable domain names.
+            </p>
+          </div>
+          <div
+            class="flex flex-col-reverse lg:flex-row items-center w-full gap-8 lg:gap-10 xl:gap-[96px] text-base leading-6 font-semibold"
+          >
+            <div
+              class="flex flex-row px-5 mt-6 lg:mt-0 lg:px-0 gap-0 xl:gap-8 w-full justify-between"
+            >
+              <div class="flex flex-col items-start gap-3 w-fit lg:w-[144px]">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
+              </div>
+              <div class="flex flex-col gap-3 w-fit lg:w-[144px]">
+                <a href="resource-book.html">Resource Book</a>
+                <a href="sampledomain.html">Shop Domains</a>
+                <a href="the-drop.html">The Drop</a>
+              </div>
+            </div>
+            <div
+              id="subscribe"
+              class="flex flex-col gap-0 lg:gap-1 items-start w-full items-center h-[112px] lg:h-[104px]"
+            >
+              <label class="pl-3 text-sm leading-5 w-full text-left mb-1" for="email"
+                >Stay up to date</label
+              >
+              <div class="flex flex-col items-center xl:flex-row gap-4 w-full">
+                <input
+                  id="email"
+                  class="border-[1.5px] border-transparent px-4 py-3 rounded-[32px] w-full lg:w-[228px] font-normal text-base leading-6 outline-none"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+                <button
+                  onclick="emailValidation(document.getElementById('email').value)"
+                  class="rounded-[30px] py-3 px-5 w-full lg:w-[228px] xl:w-full bg-primary text-white"
+                >
+                  Subscribe
+                </button>
+              </div>
+              <span
+                id="email-fail"
+                class="hidden text-red text-base leading-6 font-normal text-left w-full pl-3"
+                >Please enter your email.</span
+              >
+            </div>
+            <span
+              id="email-cont"
+              class="w-full h-[104px] hidden flex-row mr-10 gap-2 justify-center mx-auto items-center font-semibold text-white text-base leading-6 whitespace-nowrap"
+              >You have been successfully subscribed!
+              <img class="w-8 h-8" src="images/icons/check-green.svg" alt="green check" />
+            </span>
+          </div>
+        </div>
+        <div
+          class="w-full font-normal text-base leading-6 flex flex-col-reverse gap-4 md:gap-0 md:flex-row items-start md:items-center justify-between pt-8 border-t-[1px] border-primary/50"
+        >
+          <small class="text-base leading-6 font-normal opacity-50"
+            >© 2023 Wise Brands. All rights reserved.</small
+          >
+          <div class="flex flex-row gap-4">
+            <a class="opacity-50" href="terms.html">Terms</a>
+            <a class="opacity-50" href="privacy.html">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="mobile-menu" class="fixed hidden top-0 z-[100] w-full h-full bg-secondary">
+      <a href="index.html"
+        ><img
+          class="w-12 h-12 absolute left-8 top-12"
+          src="images/icons/logo.svg"
+          alt="wisenav-logo"
+      /></a>
+      <img
+        id="close-menu"
+        class="block lg:hidden cursor-pointer w-8 h-8 right-8 top-14 absolute"
+        src="images/icons/close.svg"
+        alt="close"
+      />
+      <div
+        class="font-semibold text-primary text-2xl leading-6 mt-32 flex flex-col gap-10 font-roboto items-center"
+      >
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="resource-book.html">Resource Book</a>
+        <a href="sampledomain.html">Shop Domains</a>
+        <a href="the-drop.html">The Drop</a>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>

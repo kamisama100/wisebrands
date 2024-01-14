@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+    <title>Wise Brands</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="text-primary font-inter bg-gray">
+    <nav class="nav">
+        <ul class="hidden lg:flex  flex-row items-center justify-between gap-24 h-20 pl-[166px] pr-[87px]">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html"><img src="images/icons/logo.svg" alt="wisenav-logo"></a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="domains.html" class="w-[200px] h-[48px] rounded-full bg-secondary flex items-center justify-center font-inter">Shop Domains</a></li>
+        </ul>
+        <ul class="flex flex-row justify-between items-center h-16 px-8 lg:hidden">
+            <a href="index.html"><img class="w-12 h-12" src="images/icons/logo.svg" alt="wisenav-logo"></a>
+            <img id="open-menu" class="block lg:hidden  cursor-pointer w-8 h-8" src="images/icons/menu.svg" alt="menu">
+        </ul>
+    </nav>
+
+    <main class="max-w-[1440px] mt-[120px] mx-auto overflow-hidden">
+        <div class="flex flex-col-reverse lg:flex-row items-center gap-8 xl:gap-[72px]">
+            <div class="flex flex-col gap-4 text-base leading-6 px-6 lg:pl-10 xl:pl-[148px]">
+                <h1 class="hidden lg:block font-extrabold text-[56px] leading-[64px]">Brandable Domain Resource Guide</h1>
+                <div id="download-cont" class="flex flex-col items-start w-full gap-6">
+                    <p class="font-medium">Get our free guide on how to find and choose the perfect brandable domain for your business or project. Enter your email below to receive a download link.</p>
+                    <input id="download-email" type="email" placeholder="Enter your email" class="mx-auto lg:mx-0 outline-none max-w-[208px] md:max-w-[360px] w-full border-[1px] border-gray rounded-md shadow-sm py-3 px-4">
+                    <span id="download-fail" class="-mt-4 hidden text-red text-base leading-6 font-normal text-center lg:text-left w-full pl-3">Please enter your email.</span>
+                    <button 
+                        onclick="emailValidationTwo(document.getElementById('download-email'), 
+                        document.getElementById('download-fail'), 
+                        document.getElementById('download-success'),
+                        document.getElementById('download-cont'))" 
+                        class="mx-auto lg:mx-0 bg-secondary font-semibold w-[200px] py-3 rounded-[30px]">
+                        Download
+                    </button>
+                </div>
+                <span id="download-success" class="w-full h-[104px] hidden flex-row mr-10 gap-2 justify-left mx-auto items-center font-semibold text-primary text-base leading-6">You have been successfully subscribed!
+                    <img class="w-8 h-8" src="images/icons/check-green.svg" alt="green check">
+                </span>
+            </div>
+            <div class="flex flex-col items-center gap-10 pr-0 lg:pr-10">
+                <h1 class="block lg:hidden font-extrabold text-[56px] leading-[64px] px-7 lg:px-0 text-center">Brandable Domain Resource Guide</h1>
+                <img class="w-full lg:w-[560px] min-w-[298px] max-w-[560px] h-full lg:h-[560px] max-h-[498px] lg:max-h-[560px]" src="images/resource-book.jpg" alt="cover page artwork">
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer mt-20 lg:mt-[120px] overflow-hidden">
+        <div class="max-w-[1440px] mx-auto pb-[76px] pt-12 lg:py-16 px-6 md:px-10 xl:px-20 flex flex-col gap-16 items-center">
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-[120px] items-start">
+                <div class="flex flex-col w-full gap-6 lg:gap-4 items-center">
+                    <img class="min-w-[184px] w-auto max-w-[288px] min-h-10 h-auto" src="images/icons/logo-with-text.svg" alt="logo with text">
+                    <p class="text-base leading-6 text-center">The curated marketplace for brandable domain names.</p>
+                </div>
+                <div class="flex flex-col-reverse lg:flex-row items-center w-full gap-8 lg:gap-10 xl:gap-[96px] text-base leading-6 font-semibold">
+                    <div class="flex flex-row px-5 mt-6 lg:mt-0 lg:px-0 gap-0 xl:gap-8 w-full justify-between">
+                        <div class="flex flex-col items-start gap-3 w-fit lg:w-[144px]">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="faq.html">FAQ</a>
+                        </div>
+                        <div class="flex flex-col gap-3 w-fit lg:w-[144px]">
+                            <a href="resource-book.html">Resource Book</a>
+                            <a href="sampledomain.html">Shop Domains</a>
+                            <a href="the-drop.html">The Drop</a>
+                        </div>
+                    </div>
+                    <div id="subscribe" class="flex flex-col gap-0 lg:gap-1 items-start w-full items-center h-[112px] lg:h-[104px]">
+                        <label class="pl-3 text-sm leading-5 w-full text-left mb-1" for="email">Stay up to date</label>
+                        <div class="flex flex-col items-center xl:flex-row gap-4 w-full">
+                            <input id="email" class="border-[1.5px] border-transparent px-4 py-3 rounded-[32px] w-full lg:w-[228px] font-normal text-base leading-6 outline-none" type="email" name="email" id="email" placeholder="Enter your email">
+                            <button onclick="emailValidation(document.getElementById('email').value)" class="rounded-[30px] py-3 px-5 w-full lg:w-[228px] xl:w-full bg-primary text-white">Subscribe</button>
+                        </div>
+                        <span id="email-fail" class="hidden text-red text-base leading-6 font-normal text-left w-full pl-3">Please enter your email.</span>
+                    </div>
+                    <span id="email-cont" class="w-full h-[104px] hidden flex-row mr-10 gap-2 justify-center mx-auto items-center font-semibold text-white text-base leading-6 whitespace-nowrap">You have been successfully subscribed!
+                        <img class="w-8 h-8" src="images/icons/check-green.svg" alt="green check">
+                    </span>
+                </div>
+            </div> 
+            <div class="w-full font-normal text-base leading-6 flex flex-col-reverse gap-4 md:gap-0 md:flex-row items-start md:items-center justify-between pt-8 border-t-[1px] border-primary/50">
+                <small class="text-base leading-6 font-normal opacity-50">© 2023 Wise Brands. All rights reserved.</small>
+                <div class="flex flex-row gap-4">
+                    <a class="opacity-50" href="terms.html">Terms</a>
+                    <a class="opacity-50" href="privacy.html">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="mobile-menu" class="fixed hidden top-0 z-[100] w-full h-full bg-secondary">
+        <a href="index.html"><img class="w-12 h-12 absolute left-8 top-12" src="images/icons/logo.svg" alt="wisenav-logo"></a>
+        <img id="close-menu" class="block lg:hidden cursor-pointer w-8 h-8 right-8 top-14 absolute" src="images/icons/close.svg" alt="close">
+        <div class="font-semibold text-primary text-2xl leading-6 mt-32 flex flex-col gap-10 font-roboto items-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="resource-book.html">Resource Book</a>
+            <a href="sampledomain.html">Shop Domains</a>
+            <a href="the-drop.html">The Drop</a>
+        </div>
+    </div>
+<script src="script/script.js"></script>
+</body>
+</html>   

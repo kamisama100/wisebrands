@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <title>Wise Brands</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="text-primary font-inter bg-gray">
+    <nav class="nav">
+        <ul class="hidden lg:flex  flex-row items-center justify-between gap-24 h-20 pl-[166px] pr-[87px]">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html"><img src="images/icons/logo.svg" alt="wisenav-logo"></a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="domains.html" class="w-[200px] h-[48px] rounded-full bg-secondary flex items-center justify-center font-inter">Shop Domains</a></li>
+        </ul>
+        <ul class="flex flex-row justify-between items-center h-16 px-8 lg:hidden">
+            <a href="index.html"><img class="w-12 h-12" src="images/icons/logo.svg" alt="wisenav-logo"></a>
+            <img id="open-menu" class="block lg:hidden  cursor-pointer w-8 h-8" src="images/icons/menu.svg" alt="menu">
+        </ul>
+    </nav>
+
+    <main class="max-w-[1440px] mx-auto mt-20 px-6 lg:px-16 xl:px-[148px]">
+        <div class="flex flex-col gap-10">
+            <div class="flex flex-col gap-2 md:gap-6">
+                <div class="flex flex-row justify-between items-center">
+                    <span class="font-extrabold text-[40px] md:text-[56px] leadng-10 md:leading-[64px]">userfind.com</span>
+                    <button class="hidden md:block rounded-[30px] bg-secondary w-[200px] h-[48px] font-semibold text-base leading-6">Buy this domain</button>
+                </div>
+                <div class="flex flex-row justify-between items-start">
+                    <span class="font-medium text-[32px] md:text-[48px] leading-8">$2,000</span>
+                    <button class="block md:hidden rounded-[30px] bg-secondary w-[152px] h-10 font-semibold text-base leading-6">Buy this domain</button>
+                </div>
+            </div>
+            <div class="flex flex-col gap-8 text-base leading-6">
+                <p>Are you ready to unlock the full potential of your online presence? With Userfind.com, you can do just that! This powerful domain name is versatile and impactful, making it an excellent choice for businesses looking to create an unforgettable online presence.</p>
+                <p>One innovative idea for a business using Userfind.com is a social media platform that utilizes advanced AI and machine learning algorithms to help users connect with individuals who share similar interests, hobbies, or professions. Say goodbye to endless scrolling and hello to meaningful  connections with Userfind.com!</p>
+                <p>Another potential business that could leverage the power of Userfind.com is a job search engine that aggregates job postings from various sources, including company websites, job boards, and recruiting agencies. By using advanced search algorithms, this platform matches job seekers with the most suitable job opportunities based on their skills, experience, and qualifications.</p>
+                <p>Finally, Userfind.com could be used by businesses looking to offer customer analytics and insights. By gathering data from social media, websites, and customer feedback, companies can use advanced analytics and machine learning algorithms to gain insights into customer behavior, preferences, and trends. With this information, businesses can improve their products, services, and marketing strategies, setting themselves apart from the competition.</p>
+                <p>Don't miss out on the endless possibilities that Userfind.com has to offer. Invest in this powerful domain name today and start revolutionizing the way you do business online!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-20 lg:mt-[120px] overflow-hidden">
+        <div class="max-w-[1440px] mx-auto pb-[76px] pt-12 lg:py-16 px-6 md:px-10 xl:px-20 flex flex-col gap-16 items-center">
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-[120px] items-start">
+                <div class="flex flex-col w-full gap-6 lg:gap-4 items-center">
+                    <img class="min-w-[184px] w-auto max-w-[288px] min-h-10 h-auto" src="images/icons/logo-with-text.svg" alt="logo with text">
+                    <p class="text-base leading-6 text-center">The curated marketplace for brandable domain names.</p>
+                </div>
+                <div class="flex flex-col-reverse lg:flex-row items-center w-full gap-8 lg:gap-10 xl:gap-[96px] text-base leading-6 font-semibold">
+                    <div class="flex flex-row px-5 mt-6 lg:mt-0 lg:px-0 gap-0 xl:gap-8 w-full justify-between">
+                        <div class="flex flex-col items-start gap-3 w-fit lg:w-[144px]">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="faq.html">FAQ</a>
+                        </div>
+                        <div class="flex flex-col gap-3 w-fit lg:w-[144px]">
+                            <a href="resource-book.html">Resource Book</a>
+                            <a href="sampledomain.html">Shop Domains</a>
+                            <a href="the-drop.html">The Drop</a>
+                        </div>
+                    </div>
+                    <div id="subscribe" class="flex flex-col gap-0 lg:gap-1 items-start w-full items-center h-[112px] lg:h-[104px]">
+                        <label class="pl-3 text-sm leading-5 w-full text-left mb-1" for="email">Stay up to date</label>
+                        <div class="flex flex-col items-center xl:flex-row gap-4 w-full">
+                            <input id="email" class="border-[1.5px] border-transparent px-4 py-3 rounded-[32px] w-full lg:w-[228px] font-normal text-base leading-6 outline-none" type="email" name="email" id="email" placeholder="Enter your email">
+                            <button onclick="emailValidation(document.getElementById('email').value)" class="rounded-[30px] py-3 px-5 w-full lg:w-[228px] xl:w-full bg-primary text-white">Subscribe</button>
+                        </div>
+                        <span id="email-fail" class="hidden text-red text-base leading-6 font-normal text-left w-full pl-3">Please enter your email.</span>
+                    </div>
+                    <span id="email-cont" class="w-full h-[104px] hidden flex-row mr-10 gap-2 justify-center mx-auto items-center font-semibold text-white text-base leading-6 whitespace-nowrap">You have been successfully subscribed!
+                        <img class="w-8 h-8" src="images/icons/check-green.svg" alt="green check">
+                    </span>
+                </div>
+            </div> 
+            <div class="w-full font-normal text-base leading-6 flex flex-col-reverse gap-4 md:gap-0 md:flex-row items-start md:items-center justify-between pt-8 border-t-[1px] border-primary/50">
+                <small class="text-base leading-6 font-normal opacity-50">© 2023 Wise Brands. All rights reserved.</small>
+                <div class="flex flex-row gap-4">
+                    <a class="opacity-50" href="terms.html">Terms</a>
+                    <a class="opacity-50" href="privacy.html">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="mobile-menu" class="fixed hidden top-0 z-[100] w-full h-full bg-secondary">
+        <a href="index.html"><img class="w-12 h-12 absolute left-8 top-12" src="images/icons/logo.svg" alt="wisenav-logo"></a>
+        <img id="close-menu" class="block lg:hidden cursor-pointer w-8 h-8 right-8 top-14 absolute" src="images/icons/close.svg" alt="close">
+        <div class="font-semibold text-primary text-2xl leading-6 mt-32 flex flex-col gap-10 font-roboto items-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="resource-book.html">Resource Book</a>
+            <a href="sampledomain.html">Shop Domains</a>
+            <a href="the-drop.html">The Drop</a>
+        </div>
+    </div>
+<script src="script/script.js"></script>
+</body>
+</html>   
